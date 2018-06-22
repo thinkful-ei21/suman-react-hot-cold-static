@@ -3,6 +3,7 @@ import React from 'react';
 import './guess-list.css';
 
 export default function GuessList(props) {
+    console.log(props.guesses);
     const guesses = props.guesses.map((guess, index) => (
         <li key={index}>
             {guess}
